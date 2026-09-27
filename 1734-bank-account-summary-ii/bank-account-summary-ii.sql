@@ -5,5 +5,5 @@ SELECT
 FROM users u
 JOIN Transactions t
 ON u.account = t.account
-GROUP BY u.account,u.name
+GROUP BY u.account
 HAVING SUM(amount)>10000;
